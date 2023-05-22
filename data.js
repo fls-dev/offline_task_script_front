@@ -34,6 +34,20 @@ const users = [
         "subject": ["3","4"]
     }
 ];
+const lang = {
+    ru: {
+        days: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'],
+        months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
+    },
+    en: {
+        days: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sut', 'Sun'],
+        months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    },
+    pl: {
+        days: ['Pon.', 'Wt.', 'Śr.', 'Czw.', 'Pt.', 'Sob.', 'Niedz.'],
+        months: ['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień']
+    },
+}
 
 const tasks = [
     {
@@ -41,7 +55,7 @@ const tasks = [
         "author_id": 7,
         "executor_id": 467,
         "client_id": 43,
-        "term_date": "2023-05-17 17: 00: 00",
+        "term_date": "2023-05-20 17: 00: 00",
     }, {
         "id": 5567,
         "author_id": 7,

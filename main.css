@@ -51,6 +51,78 @@ h2.center{text-align: center;font-size: 25px;font-weight: 500; letter-spacing: 1
     background: #ffffff;
     cursor: pointer;
 }
-.active{
+.selected{
     border-color: var(--main-color)!important;
 }
+
+/*select date*/
+.cal-head{
+    max-width: 260px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border: 1px solid #d0d0d0;
+    border-radius: 5px 5px 0 0;
+}
+.cal-head-box{
+    text-align: center;
+    padding: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #c2c2c2;
+}
+.cal-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    max-width: 260px;
+    border: solid #d0d0d0;
+    border-radius: 0 0 5px 5px;
+    border-width: 0 1px 1px 1px;
+    box-sizing: border-box;
+    padding: 3px;
+    row-gap: 3px;
+}
+.cal-body, .cal-head{
+    font-weight: 300;
+    user-select: none;
+}
+.select-manager-box, .select-date{
+    margin-bottom: 20px;
+}
+.cal-body-box{
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+    box-sizing: border-box;
+    cursor: default;
+}
+.cal-body-box.today, .cal-body-box.weekend.today{
+    color: green;
+}
+.cal-body-box.work{
+    cursor: pointer;
+}
+.cal-body-box.selected{
+    background: #0086a2;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.cal-body-box.weekend{
+    color: red;
+}
+.cal-body-box.past{
+    color: #adadad;
+}
+.select-time>.none-time span{display: block}
+.select-time>.none-time{
+    font-size: 15px;
+    color: #adadad;
+    font-weight: 300;
+    margin: 0;
+}
+.select-time>.none-time span{display: block}
+
+
+
